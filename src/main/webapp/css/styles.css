@@ -1,0 +1,123 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+header button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #4cae4c;
+}
+
+/* Pet Categories Section */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.category {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 30%;
+}
+
+.category h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.category button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.category button:hover {
+    background-color: #4cae4c;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    font-size: 16px;
+}

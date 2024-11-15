@@ -1,0 +1,149 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  background-color: #f5ce64; /* Light Yellow Background */
+}
+
+/* Footer Styling */
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #444; /* Dark Gray */
+   color: white; /* White text */
+   text-align: center;
+   padding: 10px 0;
+}
+
+/* Input field styling */
+.input-style {
+  width: 90%;
+  padding: 12px 20px;
+  margin-left: 5%;
+  box-sizing: border-box;
+  border: 2px solid #ddd; /* Light gray border */
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  border-radius: 8px; /* Rounded corners */
+}
+
+input[type=text]:focus, textarea:focus, button:focus {
+  outline: 4px solid #ff7f50; /* Coral outline for focus */
+  background-color: rgb(255, 230, 204); /* Light coral background */
+}
+
+/* Button styling */
+.button {
+  background-color: #ff7f50; /* Coral color */
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 40%;
+  border-radius: 25px;
+}
+
+.button:hover {
+  background-color: #ff6347; /* Tomato color on hover */
+  color: white;
+}
+
+/* Horizontal rule (divider) */
+hr {
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Heading 3 Styling */
+h3 {
+  text-align: center;
+  color: #333; /* Dark gray */
+  font-size: 1.8em;
+  margin-top: 20px;
+}
+
+/* Alert Styling */
+.alert {
+  color: #e67e22; /* Orange color */
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(255, 165, 0, 0.2); /* Light orange background */
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+/* Profile style (dotted border) */
+.profile-style {
+  border-style: dotted;
+  border-color: #ff7f50; /* Coral color border */
+  padding: 15px;
+}
+
+/* Left and right button styling */
+.left-button, .right-button {
+  width: 48%;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+
+.left-button {
+  background-color: #f39c12; /* Yellow orange */
+  color: white;
+  border-radius: 25px;
+}
+
+.right-button {
+  background-color: #2980b9; /* Blue */
+  color: white;
+  border-radius: 25px;
+}
+
+/* Left and Right divs styling */
+.left-div, .right-div, .right-div-right {
+  width: 33.33%;
+  display: inline-block;
+  padding: 15px;
+}
+
+/* Styling for customer table */
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 12px;
+  font-size: 1.1em;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f9f9f9; /* Very light gray for even rows */
+}
+
+#customers tr:hover {
+  background-color: #f2f2f2; /* Slight gray hover effect */
+}
+
+#customers th {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-align: left;
+  background-color: #ff7f50; /* Coral color */
+  color: white; /* White text for header */
+  font-size: 1.2em;
+}
