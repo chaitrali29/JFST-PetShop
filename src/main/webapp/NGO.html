@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO - India</title>
+    <style>
+        /* Page background and font styles */
+        body {
+            background-color: #FFA500; /* Orange background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Container styling */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Heading and text styles */
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        /* NGO box styling */
+        .ngo-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        /* Button styling */
+        .contact-button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            font-size: 1.1em;
+            color: #fff;
+            background-color: tomato;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .contact-button:hover {
+            background-color: #e74c3c;
+        }
+
+        /* Form styling */
+        form input, form textarea, form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        form textarea {
+            resize: vertical;
+        }
+
+        /* Success message styling */
+        .success-message {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            margin: 20px 0;
+            display: none; /* Initially hidden */
+        }
+    </style>
+    <script>
+        // JavaScript to show success message upon form submission
+        function showSuccessMessage(event) {
+            event.preventDefault(); // Prevent form from actually submitting
+            document.getElementById("successMessage").style.display = "block"; // Show the success message
+            document.getElementById("consultationForm").reset(); // Reset the form fields
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h1>NGO - India</h1>
+    <p>Welcome to our platform! We partner with NGOs across India to offer free consultations for pet owners seeking guidance on pet care, health, and behavior. Select from any of our trusted NGOs below.</p>
+
+    <!-- NGO 1 -->
+    <div class="ngo-section">
+        <h2>Happy Paws Foundation</h2>
+        <p>Founded in 2010, Happy Paws Foundation is a leading NGO in animal welfare, providing expert advice on pet care, health, and emergencies.</p>
+        <p><strong>Contact:</strong> info@happypawsfoundation.in</p>
+        <p><strong>Phone:</strong> +91-9876543210</p>
+        <p><strong>Address:</strong> 1234 Paws Street, Andheri West, Mumbai, Maharashtra 400053</p>
+    </div>
+
+    <!-- NGO 2 -->
+    <div class="ngo-section">
+        <h2>Paws & Claws Trust</h2>
+        <p>Paws & Claws Trust is dedicated to rescuing animals and offering guidance to pet owners. Their services include nutritional advice and behavioral consultations.</p>
+        <p><strong>Contact:</strong> contact@pawsandclaws.org</p>
+        <p><strong>Phone:</strong> +91-9123456789</p>
+        <p><strong>Address:</strong> 567 Claw Road, Sector 18, Gurgaon, Haryana 122015</p>
+    </div>
+
+    <!-- NGO 3 -->
+    <div class="ngo-section">
+        <h2>Animal Aid Sanctuary</h2>
+        <p>Animal Aid Sanctuary, based in Bangalore, is committed to animal welfare and provides consultations on health, preventive care, and pet emergencies.</p>
+        <p><strong>Contact:</strong> help@animalaidsanctuary.org</p>
+        <p><strong>Phone:</strong> +91-9988776655</p>
+        <p><strong>Address:</strong> 789 Animal Shelter Lane, Whitefield, Bangalore, Karnataka 560066</p>
+    </div>
+
+    <!-- Success message -->
+    <div id="successMessage" class="success-message">
+        Your details have been successfully submitted! We’ll be in touch soon.
+    </div>
+
+    <h2>Schedule a Consultation</h2>
+    <p>If you'd like to schedule a consultation with any of the NGOs, please fill out the form below, and we’ll get back to you as soon as possible.</p>
+
+    <!-- Consultation form with onsubmit event to show success message -->
+    <form id="consultationForm" action="scheduleConsultation.jsp" method="post" onsubmit="showSuccessMessage(event)">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+
+        <label for="petDetails">Pet Details:</label>
+        <textarea id="petDetails" name="petDetails" rows="4" placeholder="Tell us about your pet (age, breed, health issues, etc.)" required></textarea>
+
+        <label for="ngoSelect">Select NGO:</label>
+        <select id="ngoSelect" name="ngoSelect" required>
+            <option value="Happy Paws Foundation">Happy Paws Foundation - Mumbai</option>
+            <option value="Paws & Claws Trust">Paws & Claws Trust - Gurgaon</option>
+            <option value="Animal Aid Sanctuary">Animal Aid Sanctuary - Bangalore</option>
+        </select>
+
+        <label for="consultationType">Type of Consultation:</label>
+        <select id="consultationType" name="consultationType" required>
+            <option value="Health">Health and Wellness</option>
+            <option value="Nutrition">Nutrition</option>
+            <option value="Behavior">Behavioral</option>
+            <option value="Emergency">Emergency Advice</option>
+        </select>
+
+        <button type="submit" class="contact-button">Submit Request</button>
+    </form>
+</div>
+
+</body>
+</html>

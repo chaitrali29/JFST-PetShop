@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Accessories</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5fffa; /* Mint Cream background */
+            height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Enhanced Heading Style */
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #ff7f50, #ff6347); /* Coral Gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            text-align: center;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px); /* Lift effect */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .product-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 15px 0;
+            color: #4b0082; /* Indigo color */
+        }
+
+        .product-price {
+            font-size: 16px;
+            color: #444;
+            margin: 5px 0;
+        }
+
+        .add-to-cart button {
+            background-color: #ff6347; /* Tomato button color */
+            border: none;
+            color: white;
+            padding: 12px 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 15px;
+            margin-top: auto;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart button:hover {
+            background-color: #ff7f50; /* Lighter Coral on hover */
+        }
+
+        /* Header and Navigation Styling */
+        header {
+            background-color: #ff6347; /* Tomato color for header */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #ff6347;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Dog Accessories</h1>
+        <div class="product-grid">
+            <!-- Dog Leash -->
+            <div class="product-card">
+                <img src="img/dog-leash.jpg" alt="Dog Leash">
+                <div class="product-title">Durable Dog Leash</div>
+                <div class="product-price">₹299.00</div>
+                <div class="add-to-cart">
+            
+                </div>
+            </div>
+            <!-- Dog Grooming Kit -->
+            <div class="product-card">
+                <img src="img/dog-grooming-kit.png" alt="Dog Grooming Kit">
+                <div class="product-title">Complete Grooming Kit</div>
+                <div class="product-price">₹899.00</div>
+                <div class="add-to-cart">
+                    
+                </div>
+            </div>
+            <!-- Dog Treats -->
+            <div class="product-card">
+                <img src="img/dog-training-treats.png" alt="Dog Training Treats">
+                <div class="product-title">Healthy Dog Treats</div>
+                <div class="product-price">₹149.00</div>
+                <div class="add-to-cart">
+                
+                </div>
+            </div>
+            <!-- Winter Dog Jacket -->
+            <div class="product-card">
+                <img src="img/dog-winter-jacket.png" alt="Dog Winter Jacket">
+                <div class="product-title">Warm Winter Jacket</div>
+                <div class="product-price">₹699.00</div>
+                <div class="add-to-cart">
+            
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 PetLover. All rights reserved.</p>
+        <p>Visit our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.</p>
+    </footer>
+</body>
+</html>
+
+

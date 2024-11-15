@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+   <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<style>
+    /* General Body and Container Styling */
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5fffa; /* Mint Cream background color */
+        height: 100vh;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    /* Enhanced Heading Style */
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2.5em;
+        font-weight: bold;
+        background: linear-gradient(135deg, #ff7f50, #ff6347); /* Coral gradient */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    }
+
+    /* Testimonial Card Styling */
+    .testimonial-card {
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        padding: 15px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+        transform: translateY(-5px); /* Lift effect on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Testimonial Image */
+    .testimonial-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 2px solid #ff6347; /* Tomato border color for emphasis */
+    }
+
+    /* Testimonial Content Styling */
+    .testimonial-content {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Name Styling */
+    .testimonial-card h5 {
+        font-size: 18px;
+        font-weight: bold;
+        color: #4b0082; /* Indigo for name */
+        margin-bottom: 5px;
+    }
+
+    /* Text Styling */
+    .testimonial-card p {
+        font-size: 16px;
+        color: #444;
+    }
+</style>
+<!-- Topbar Start -->
+<div class="container-fluid">
+    <div class="row bg-secondary py-2 px-lg-5">
+        <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center">
+                <a class="text-white pr-3" href="">FAQs</a>
+                <span class="text-white">|</span>
+                <a class="text-white px-3" href="">Help</a>
+                <span class="text-white">|</span>
+                <a class="text-white pl-3" href="">Support</a>
+            </div>
+        </div>
+        <div class="col-lg-6 text-center text-lg-right">
+            <div class="d-inline-flex align-items-center">
+                <a class="text-white px-3" href="https://www.instagram.com/pawsandwhiskers_/#">
+                    <img src="img/insta.png" alt="Instagram" style="width: 30px; height: 30px;">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="row py-3 px-lg-5">
+            <div class="col-lg-4">
+                <a href="" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5 text-capitalize"><span class="text-primary">Pet</span>Lover</h1>
+                </a>
+            </div>
+            <div class="col-lg-8 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <div class="d-inline-flex flex-column text-center pr-3 border-right">
+                        <h6>Opening Hours</h6>
+                        <p class="m-0">8.00AM - 9.00PM</p>
+                    </div>
+                    <div class="d-inline-flex flex-column text-center px-3 border-right">
+                        <h6>Email Us</h6>
+                        <p class="m-0">snehasharma@gmail.com</p>
+                    </div>
+                    <div class="d-inline-flex flex-column text-center pl-3">
+                        <h6>Call Us</h6>
+                        <p class="m-0">+91 8899677589</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Navbar -->
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+        <a href="" class="navbar-brand d-block d-lg-none">
+            <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+            <div class="navbar-nav mr-auto py-0">
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="signup.jsp" class="nav-item nav-link">Customer Register</a>
+                <a href="login.jsp" class="nav-item nav-link">Login</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a> 
+                <!-- Updated Contact link -->
+                  <a href="NGO.html" class="nav-item nav-link">NGO</a> 
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!-- crousel start
+    <div class="container-fluid p-0">
+        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                   
+                        <div class="p-3" style="max-width: 900px;">
+                            <h3 class="text-white mb-3 d-none d-sm-block">Best Pet Services</h3>
+                            <h1 class="display-3 text-white mb-3">Keep Your Pet Happy</h1>
+                            <h5 class="text-white mb-3 d-none d-sm-block">Providing quality care and love for your pets in every service</h5>
+                            <a href="" class="btn btn-lg btn-primary mt-3 mt-md-4 px-4">Book Now</a>
+                            <a href="" class="btn btn-lg btn-secondary mt-3 mt-md-4 px-4">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                 
+                        <div class="p-3" style="max-width: 900px;">
+                            <h3 class="text-white mb-3 d-none d-sm-block">Best Pet Services</h3>
+                            <h1 class="display-3 text-white mb-3">Pet Spa & Grooming</h1>
+                            <h5 class="text-white mb-3 d-none d-sm-block">Providing quality care and love for your pets in every service</h5>
+                            <a href="" class="btn btn-lg btn-primary mt-3 mt-md-4 px-4">Book Now</a>
+                            <a href="" class="btn btn-lg btn-secondary mt-3 mt-md-4 px-4">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-primary rounded" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-prev-icon mb-n2"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                <div class="btn btn-primary rounded" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-next-icon mb-n2"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+    -->
+
+    
+    <!-- Carousel Start -->
+<div class="container-fluid p-0">
+    <div id="header-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                <div class="p-3" style="max-width: 900px;">
+                    <h3 class="text-white mb-3 d-none d-sm-block">Best Pet Services</h3>
+                    <h1 class="display-3 text-white mb-3">Keep Your Pet Happy</h1>
+                    <h5 class="text-white mb-3 d-none d-sm-block">Providing quality care and love for your pets in every service</h5>
+                    <a href="" class="btn btn-lg btn-primary mt-3 mt-md-4 px-4">Book Now</a>
+                    <a href="" class="btn btn-lg btn-secondary mt-3 mt-md-4 px-4">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <!-- Pet Categories Section -->
+<section class="categories">
+    <div class="category">
+        <h2>Dogs</h2>
+        <img src="img/dog.jpg" alt="Dogs">
+        <a href="Dogproducts.html"><button>Shop Now</button></a>
+    </div>
+    <div class="category">
+        <h2>Cats</h2>
+        <img src="img/cat.jpg" alt="Cats">
+        <a href="Catproducts.html"><button>Shop Now</button></a>
+    </div>
+    <div class="category">
+        <h2>Small Pets</h2>
+        <img src="img/fish.jpg" alt="Fish">
+        <a href="fishProducts.html"><button>Shop Now</button></a>
+    </div>
+    <div class="category">
+        <h2>Vet Consultation</h2>
+        <img src="img/vtjpg.jpg" alt="Vet Consultation">
+        <a href="veternity.html"><button>Book Now</button></a>
+    </div>
+</section>
+
+    
+    
+    <!-- Testimonial Start -->
+<div class="container-fluid bg-light my-5 p-0 py-5">
+    <div class="container p-0 py-5">
+        <div class="d-flex flex-column text-center mb-5">
+            <h4 class="text-secondary mb-3">Testimonial</h4>
+            <h1 class="display-4 m-0">What Our <span class="text-primary">Clients Say</span></h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel">
+            <div class="testimonial-card bg-white mx-3 p-4">
+                <div class="testimonial-content d-flex align-items-end mb-3 mt-n4 ml-n4">
+                    <img class="testimonial-img img-fluid" src="img/testimonial-1.jpg" alt="">
+                    <div class="ml-3">
+                        <h5>Rohan Sharma</h5>
+                    </div>
+                </div>
+                <p class="m-0">The grooming services here are amazing! My dog has never looked better, and the staff always ensures he’s comfortable and happy.</p>
+            </div>
+            <div class="testimonial-card bg-white mx-3 p-4">
+                <div class="testimonial-content d-flex align-items-end mb-3 mt-n4 ml-n4">
+                    <img class="testimonial-img img-fluid" src="img/testimonial-2.jpg" alt="">
+                    <div class="ml-3">
+                        <h5>Priyansh Kapoor</h5>
+                    </div>
+                </div>
+                <p class="m-0">I absolutely love the range of pet products available here! The quality is top-notch, and my cat enjoys every treat I get from this shop.</p>
+            </div>
+            <div class="testimonial-card bg-white mx-3 p-4">
+                <div class="testimonial-content d-flex align-items-end mb-3 mt-n4 ml-n4">
+                    <img class="testimonial-img img-fluid" src="img/testimonial-3.jpg" alt="">
+                    <div class="ml-3">
+                        <h5>Vikram Mehta</h5>
+                    </div>
+                </div>
+                <p class="m-0">The team is extremely knowledgeable and helpful. They recommended the perfect food for my dog, and he absolutely loves it!</p>
+            </div>
+            <div class="testimonial-card bg-white mx-3 p-4">
+                <div class="testimonial-content d-flex align-items-end mb-3 mt-n4 ml-n4">
+                    <img class="testimonial-img img-fluid" src="img/testimonial-4.jpg" alt="">
+                    <div class="ml-3">
+                        <h5>Manoj Desai</h5>
+                    </div>
+                </div>
+                <p class="m-0">The boarding services are excellent. I can travel with peace of mind knowing my pets are in such good hands.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+    
+
+    <!-- Footer -->
+  
+<div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+    <div class="row pt-5">
+        <div class="col-lg-4 col-md-12 mb-5">
+            <h1 class="mb-3 display-5 text-capitalize text-white"><span class="text-primary">Pet</span>Lover</h1>
+            <p>We are passionate about pets and dedicated to providing the best care possible.</p>
+        </div>
+        <div class="col-lg-8 col-md-12">
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-primary mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>KarveNagar, Pune, Maharashtra</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+91 8899677589</p>
+                    <p><i class="fa fa-envelope mr-2"></i>snehasharma@gmail.com</p>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-primary mb-4">Quick Links</h5>
+                    <a class="text-white mb-2" href="about.html">About Us</a>
+                    <a class="text-white mb-2" href="contact.html">Contact Us</a>
+                     
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>

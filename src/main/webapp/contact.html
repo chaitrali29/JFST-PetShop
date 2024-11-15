@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pet Shop</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff; /* Light blue background */
+            margin: 0;
+            padding: 20px;
+        }
+        
+        /* Header Styling */
+        header {
+            background-color: #ff6347; /* Tomato color */
+            padding: 15px 0;
+            text-align: center;
+            color: white;
+        }
+        
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        
+        footer a {
+            color: #ff6347;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #ff6347; /* Tomato color for Contact Us heading */
+            margin-bottom: 20px;
+            font-size: 2.2em;
+        }
+        
+        .contact-info {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .contact-info div {
+            margin-bottom: 20px;
+        }
+        
+        .contact-info i {
+            font-size: 1.8em;
+            color: #ff6347; /* Consistent Tomato color for icons */
+        }
+        
+        .contact-info h4 {
+            margin: 8px 0;
+            color: #333;
+        }
+        
+        .contact-info p {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        input, textarea {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+            outline: none;
+        }
+        
+        textarea {
+            resize: vertical;
+            height: 120px;
+        }
+        
+        button {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #e5533d; /* Darker shade of tomato */
+        }
+        
+        .social-media {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .social-media a {
+            text-decoration: none;
+        }
+        
+        .social-media img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+        
+        .social-media img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+   <header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html">Shop</a>
+        <a href="about.html">About Us</a>
+        
+    </nav>
+</header>
+    
+    <!-- Main Content Section -->
+    <div class="container">
+        <h1>Contact Us</h1>
+        
+        <!-- Contact Info Section -->
+        <div class="contact-info">
+            <!-- Karve Nagar Location -->
+            <!--   <div>
+                <i class="fa fa-map-marker-alt"></i>
+                <h4>Our Location - Karve Nagar</h4>
+                <p>Karve Nagar, Pune, Maharashtra</p>
+            </div>
+            
+         
+            <div>
+                <i class="fa fa-phone-alt"></i>
+                <h4>Call Us</h4>
+                <p>+91 8899677589</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <h4>Email Us</h4>
+                <p>snehasharma@gmail.com</p>
+            </div>
+        </div> -->
+          
+        
+        <b>Our Location - Karve Nagar</b><br>
+Karve Nagar, Pune, Maharashtra<br><br>
+
+<b>Call Us</b><br>
++91 8899677589<br><br>
+
+<b>Email Us</b><br>
+snehasharma@gmail.com
+        
+        <!-- Contact Form Section -->
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        
+        <!-- Social Media Link (Instagram using insta.png) -->
+        <div class="social-media">
+            <a href="https://www.instagram.com/pawsandwhiskers_/#" target="_blank">
+                <img src="images/insta.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 PetLover. All rights reserved.</p>
+        <p>Visit our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.</p>
+    </footer>
+
+
+    <!-- Font Awesome CDN for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
